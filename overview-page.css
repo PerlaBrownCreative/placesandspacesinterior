@@ -1,0 +1,675 @@
+/***************************************************
+ * 
+ * Schloss Dagstuhl Website: Formatierung fuer Druckversion
+ * Version: $Rev: 14 $
+ * Stand: $Id: print.css 14 2006-03-23 17:44:12Z ct $
+ * 
+ * (c) 2003-2006 by mehrwert
+ * 
+ * mehrwert intermediale kommunikation
+ * Beutel & Ploch GbR
+ * Riehler Strasse 51
+ * 50668 Koeln
+ * 
+ * Tel: +49 221 139753-0
+ * Fax: +49 221 139753-13
+ * 
+ * typo3@mehrwert.de
+ * http://www.mehrwert.de
+ * 
+ **************************************************/
+
+ @import url("./screen.css");
+
+ /* GLOBAL */
+ HTML {
+     font-size: 10pt;
+ }
+ 
+ BODY {
+     font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+     text-align: center;
+     background: #fff;
+     line-height: 14pt;
+     font-size: 10pt;
+ }
+ 
+ BODY DIV {
+     text-align: left;
+ }
+ 
+ DIV#content {
+     text-align: left;
+     margin-right: auto;
+     margin-left: auto;
+     padding: 0;
+ }
+ 
+ #frame {
+     margin-right: auto;
+     margin-left: auto;
+     margin-top: 0;
+     background: #fff;
+     padding: 0;
+ }
+ 
+ DIV.footer {
+ }
+ 
+ DIV#footer {
+     display: none;
+ }
+ 
+ DIV.csc-linkToTop {
+     text-align: right;
+     display: none;
+ }
+ 
+ IMG {
+     border: 0;
+ }
+ 
+ 
+ /* HYPERLINKS */
+ /* 
+ A[href]:after {
+     background-color:inherit;
+     font-style:italic;
+     content:" <"attr(href)">";
+     color:#888;
+     size:80%;
+ }
+ 
+ *[name]:after {
+     background-color:inherit;
+     font-style:italic;
+     content:" [#"attr(name)"]";
+     color:#888;
+     size:80%;
+ }
+ */
+ 
+ BODY A:link, BODY A:visited {
+     font-weight: normal;
+     font-size: 11pt;
+     color: #000;
+     text-decoration: none ! important;
+ }
+ 
+ A, DIV A:link {
+     text-decoration: underline;
+     font-weight: normal;
+     color: #000;
+ }
+ 
+ A:active {
+     color: #000;
+ }
+ 
+ A:visited {
+     color: #000;
+ }
+ 
+ A:hover {
+     color: #000;
+ }
+ 
+ A.linkIco IMG {
+     padding: 0;
+     margin: 0 2px 0 0;
+     border: 0;
+ }
+ 
+ .shortCuts, #nav_lang, #header, #tcol, #lcol, #rcol, #nav_meta_frame, #header_sub, #nav, #nav_footer {
+     display: none;
+ }
+ 
+ 
+ /* HEADLINES */ 
+ H1, H1 A, H2, H2 A, H3, H3 A, H4, H4 A, H5, H5 A { 
+     text-decoration: none; 
+     font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold; 
+     line-height: 18pt; 
+     font-size: 16pt;
+     margin: 8px 0 8px 0;
+     color: #000;
+ }
+ 
+ H1 {
+     font-size: 20pt;
+ }
+ 
+ H3 {
+     font-size: 12pt;
+ }
+ 
+ /* TABELLEN */ 
+ TD, P {
+     font-size: 10pt;
+ }
+ 
+ TD.tableHeader {
+     border-bottom: 1px solid #fff;
+     padding: 5px;
+     margin: 2px;
+ }
+ 
+ TD.tableContent {
+     vertical-align: top;
+     padding: 5px;
+     margin: 2px;
+ }
+ 
+ /* LINLIEN */
+ HR {
+     border: 1px solid #888;
+     height: 1px;
+     width: 100%;
+ }
+ 
+ 
+ /* LISTEN ALLGEMEIN */
+ UL {
+     /* list-style-type: none; */
+     padding: 2px 0 2px 16px;
+     margin: 0;
+ }
+ 
+ LI {
+     padding: 2px 0 6px 0;
+     margin: 0;
+ }
+ 
+ LI SPAN {
+     color: #333;
+ }
+ 
+ 
+ /* LISTS GLOBAL */
+ DIV.csc-menu UL,
+ DIV.csc-menu UL LI {
+     list-style-image: none;
+     list-style-type: none;
+     list-style: none;
+ }
+ 
+ DIV.csc-menu P.csc-section A {
+     margin: 0;
+ }
+ 
+ 
+ /* Menu / Sitemap, "Menu of these pages" */
+ DIV.csc-menu-def P {
+     font-size: 12pt;
+ }
+ 
+ 
+ /* Menu / Sitemap, "Menu of subpages to these pages" */
+ DIV.csc-menu-1 {
+ }
+ 
+ 
+ /* Menu / Sitemap, "Sitemap" */
+ DIV.csc-menu-2 {
+     list-style-image: none;
+     list-style-type: none;
+     list-style: none;
+ }
+ 
+ DIV.csc-menu-2 UL LI {
+     list-style-image: none;
+     list-style-type: none;
+ }
+ 
+ DIV.csc-menu-2 UL LI A {
+     text-decoration: none;
+     font-weight: bold;
+     line-height: 18pt;
+     font-size: 16pt;
+ }
+ 
+ DIV.csc-menu-2 UL UL LI A {
+     text-decoration: none;
+     font-weight: normal;
+     line-height: 14pt;
+     font-size: 12pt;
+     color: #333;
+ }
+ 
+ 
+ /* Menu / Sitemap, "Section index (pagecontent w/Index checked)" */
+ DIV.csc-menu-3 {
+     margin: 0 0 24px 0;
+ }
+ 
+ DIV.csc-menu-3 P, DIV.csc-menu-3 P.csc-section {
+     margin: 0 0 4px 0;
+ }
+ 
+ DIV.csc-menu-3 P.csc-section A {
+ }
+ 
+ 
+ /* Menu / Sitemap, "Menu of subpages to these pages (with abstract)" */
+ DIV.csc-menu-4 {
+ }
+ 
+ DIV.csc-menu-4 P {
+     margin: 2px 0 0 0;
+ }
+ 
+ DIV.csc-menu-4 P.csc-abstract {
+     line-height: 2.0em;
+     font-weight: normal;
+     padding: 0;
+     margin: 0 0 8px 0;
+     color: #888;
+ }
+ 
+ DIV.csc-menu-4 DT, DIV.csc-menu-4 DD {
+     padding: 0;
+     margin: 0;
+ }
+ 
+ 
+ /* Menu / Sitemap, "Recently updated pages" */
+ DIV.csc-menu-5 {
+ }
+ 
+ /* Menu / Sitemap, "Related pages (based on keywords)" */
+ DIV.csc-menu-6 {
+ }
+ 
+ /* Menu / Sitemap, "Menu of subpages to these pages + sections" */
+ DIV.csc-menu-7 UL UL LI A {
+     text-decoration: none;
+     font-weight: normal;
+     line-height: 14pt;
+     font-size: 12pt;
+     color: #333;
+ }
+ 
+ DIV.csc-menu-7 P.csc-section A {
+ }
+ 
+ 
+ /* TEXT + IMAGE */
+ /* Captions */
+ P.csc-caption { 
+     margin: 0;
+ }
+ 
+ P.csc-caption {
+     font-size: 80%; /* Customize me */
+ }
+ 
+ DIV.csi-caption-c .csi-caption {
+     text-align: center;
+ }
+ 
+ DIV.csi-caption-r .csi-caption {
+     text-align: right;
+ }
+ 
+ DIV.csi-caption-l .csi-caption {
+     text-align: left;
+ }
+ 
+ /* Needed for noRows setting */
+ DIV.csi-textpic DIV.csi-imagecolumn {
+     float: left; display: inline;
+ }
+ 
+ /* Border just around the image, like content (default) does: */
+ DIV.csi-border-2-black DIV.csi-imagewrap .csi-image IMG {
+     border: 2px solid black;
+ }
+ 
+ DIV.csi-imagewrap {
+     padding: 0;
+ }
+ 
+ DIV.csi-textpic IMG {
+     border: none;
+ }
+ 
+ /* DIV: This will place the images side by side */
+ DIV.csi-textpic DIV.csi-imagewrap DIV.csi-image {
+     float: left;
+ }
+ 
+ /* UL: This will place the images side by side */
+ DIV.csi-textpic DIV.csi-imagewrap UL {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ DIV.csi-textpic DIV.csi-imagewrap UL LI {
+     float: left;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ /* DL: This will place the images side by side */
+ DIV.csi-textpic DIV.csi-imagewrap DL.csi-image {
+     float: left;
+ }
+ 
+ DIV.csi-textpic DIV.csi-imagewrap DL.csi-image DT {
+     float: none;
+ }
+ 
+ DIV.csi-textpic DIV.csi-imagewrap DL.csi-image DD {
+     float: none;
+ }
+ 
+ /* FE-Editing Icons */
+ DIV.csi-textpic DIV.csi-imagewrap DL.csi-image DD IMG {
+     border: none;
+ }
+ 
+ DL.csi-image {
+     margin: 0;
+ }
+ 
+ DL.csi-image DT {
+     margin: 0;
+ }
+ 
+ DL.csi-image DD {
+     margin: 0;
+ }
+ 
+ /* Clearer */
+ DIV.csi-textpic DIV.csi-clear {
+     clear: both;
+ }
+ 
+ 
+ /* Margins around images: */
+ /* Pictures on left, add padding on right */
+ DIV.csi-left DIV.csi-imagewrap .csi-image,
+ DIV.csi-intext-left-nowrap DIV.csi-imagewrap .csi-image,
+ DIV.csi-intext-left DIV.csi-imagewrap .csi-image {
+     display: inline; /* IE fix for double-margin bug */
+     margin-right: 10px; /* Customize me, and set colSpace in TS */
+ }
+ 
+ /* Pictures on right, add padding on left */
+ DIV.csi-right DIV.csi-imagewrap .csi-image,
+ DIV.csi-intext-right-nowrap DIV.csi-imagewrap .csi-image,
+ DIV.csi-intext-right DIV.csi-imagewrap .csi-image {
+     display: inline; /* IE fix for double-margin bug */
+     margin-left: 10px; /* Customize me, and set colSpace in TS */
+ }
+ 
+ /* Pictures centered, add padding left and right */
+ DIV.csi-center DIV.csi-imagewrap .csi-image {
+     display: inline; /* IE fix for double-margin bug */
+     margin-left: 5px; /* Customize me, and set colSpace in TS */
+     margin-right: 5px; /* Customize me, and set colSpace in TS */
+ }
+ 
+ DIV.csi-textpic DIV.csi-imagewrap .csi-image .csi-caption {
+ margin: 0;
+ }
+ 
+ DIV.csi-textpic DIV.csi-imagewrap .csi-image IMG {
+     margin: 0;
+ }
+ 
+ /* Space below each image (also in-between rows) */
+ DIV.csi-textpic DIV.csi-imagewrap .csi-image {
+     margin-bottom: 5px;
+ }
+ 
+ 
+ /* Positioning of images: */
+ /* Above */
+ DIV.csi-above DIV.csi-text {
+     clear: both;
+ }
+ 
+ /* Center (above or below) */
+ DIV.csi-center { text-align: center; /* IE-hack */ }
+ DIV.csi-center DIV.csi-imagewrap { margin: 0 auto; }
+ DIV.csi-center DIV.csi-imagewrap .csi-image { text-align: left; /* Remove IE-hack */ }
+ DIV.csi-center DIV.csi-text { text-align: left; /* Remove IE-hack */ }
+ 
+ /* Right (above or below) */
+ DIV.csi-right DIV.csi-imagewrap { float: right; }
+ DIV.csi-right DIV.csi-text { clear: right; }
+ 
+ /* Left (above or below) */
+ DIV.csi-left DIV.csi-imagewrap { float: left; }
+ DIV.csi-left DIV.csi-text { clear: left; }
+ 
+ /* Left (in text) */
+ DIV.csi-intext-left DIV.csi-imagewrap { float: left; }
+ 
+ /* Right (in text) */
+ DIV.csi-intext-right DIV.csi-imagewrap { float: right; }
+ 
+ /* Right (in text, no wrap around) */
+ DIV.csi-intext-right-nowrap DIV.csi-imagewrap { float: right; clear: both; }
+ /* Hide from IE5-mac. Only IE-win sees this. \*/
+ * html DIV.csi-intext-right-nowrap .csi-text { height: 1%; }
+ /* End hide from IE5/mac */ 
+ 
+ /* Left (in text, no wrap around) */
+ DIV.csi-intext-left-nowrap DIV.csi-imagewrap { float: left; clear: both; }
+ /* Hide from IE5-mac. Only IE-win sees this. \*/
+ * html DIV.csi-intext-left-nowrap .csi-text { height: 1%; }
+ /* End hide from IE5/mac */
+ 
+ 
+ /* AZ-Index */
+ DIV.tx-mwkeywordlist-pi1 {
+     /* width: 520px; */
+ }
+ 
+ DIV.tx-mwkeywordlist-pi1-jumpmenu {
+     font-size: 10pt;
+     display: none;
+ }
+ 
+ DIV.tx-mwkeywordlist-pi1 DL DT {
+     margin: 8px 0 0 0;
+     font-weight: bold;
+ }
+ 
+ DIV.tx-mwkeywordlist-pi1 DL DD {
+     margin: 0 0 4px 16px;
+ }
+ 
+ 
+ /* News / LATEST */
+ DIV.news DIV.news-latest DIV.concol,
+ DIV.news DIV.news-list DIV.concol {
+     margin: 16px 0 40px 0;
+     /* width: 500px; */
+ }
+ 
+ DIV.news DIV.news-list DIV.concol H2 A,
+ DIV.news DIV.news-latest DIV.concol H2 A {
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 12pt;
+ }
+ 
+ DIV.news-list .img-container,
+ DIV.news-latest .img-container,
+ DIV.news-detail .img-container {
+     margin: 3px 8px 0 0;
+     width: 72px;
+     float: left;
+ }
+ 
+ 
+ /* News / LIST */
+ .news H2, .news H2 A {
+     text-decoration: none;
+     line-height: 1.2em;
+ }
+ 
+ DIV.news-latest SUP,
+ DIV.news-list SUP {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     padding: 0;
+     margin: 0 0 2.5em 0;
+     height: 1em;
+     font-size: 1em;
+     color: #666;
+ }
+ 
+ .news-list #nav_newsfooter, SPAN.moreLink {
+     font-size: 10pt;
+ }
+ 
+ .news-list .img-container, .news-detail .img-container {
+     margin: 3px 8px 0 0;
+     width: 72px;
+     float: left;
+ }
+ 
+ .news-list .img-container, .news-detail .img-container {
+     margin: 3px 8px 0 0;
+     width: 72px;
+     float: left;
+ }
+ 
+ .news-latest .img-container {
+ }
+ 
+ 
+ /* News / SINGLE */
+ DIV.news-detail {
+     margin: 0;
+ }
+ 
+ DIV.news-detail H2 {
+     text-decoration: none;
+     line-height: 1.2em;
+     margin: 0 0 10px 0;
+ }
+ 
+ .news-detail SUP {
+     display: block;
+     margin: 10px 0 10px 0;
+     height: 10px;
+     color: #444;
+ }
+ 
+ .news-detail .concol {
+     margin: 0 0 36px 0;
+ }
+ 
+ .news-detail DIV.img-container {
+     width: 144px;
+ }
+ 
+ DIV.news_footer {
+     font-size: 10pt;
+     margin: 10px 0 0 0;
+ }
+ 
+ .news-detail .csc-caption {
+     padding: 0 0 0 0;
+     margin: 0 0 0 0;
+     width: 144px;
+ }
+ 
+ .news-detail .csc-caption P {
+     font-size: 9pt;
+     padding: 0;
+     margin: 10px 0 10px 0;
+     height: 1em;
+ }
+ 
+ 
+ DIV.news-detail DL,
+ DIV.news-detail DT,
+ DIV.news-detail DD {
+     padding: 0;
+     margin: 0;
+ }
+ 
+ DIV.news-detail DT {
+     font-weight: bold;
+     margin: 10px 0 0 0;
+ }
+ 
+ DIV.news-detail DD {
+     padding: 0;
+     margin: 0 0 0 10px;
+ }
+ 
+ 
+ /* News / ARCHIV */
+ LI.news-amenu-item-year {
+     font-weight: bold;
+ }
+ 
+ .news-archiv {
+     margin: 0 0 16px 0;
+ }
+ 
+ .news-archive-item {
+     margin: 0 0 8px 0;
+ }
+ 
+ .tx-ttnews-browsebox-SCell A {
+     text-decoration: none;
+     font-weight: bold;
+     color: #fff;
+ }
+ 
+ .tx-ttnews-browsebox .tx-ttnews-browsebox-SCell {
+ }
+ 
+ .tx-ttnews-browsebox .tx-ttnews-browsebox-SCell A {
+ }
+ 
+ .tx-ttnews-browsebox TABLE {
+     margin: 18px 0 0 0;
+ }
+ 
+ .tx-ttnews-browsebox TABLE A {
+     text-decoration: none;
+     color: #000;
+ }
+ 
+ .tx-ttnews-browsebox TABLE TD {
+     text-align: center;
+     vertical-align: middle;
+     padding: 0 4px 0 4px;
+     margin: 0;
+ }
+ 
+ .news .catImg IMG, .catImg {
+     margin: 0 6px 0 0;
+     border: 0;
+ }
+ 
+ div.summary p
+ {
+     font-size: 11pt;
+ }
+ 
+ div.summary dl, div.summary ul, div.summary ol, div.summary a
+ {
+     font-size: 11pt ! important;
+ }
+ 
+ div.summary dl *, div.summary ul *, div.summary ol *, div.summary a *
+ {
+     font-size: 11pt ! important;
+ }
+ 
+ ul, ul a
+ {
+     font-size: 11pt ! important;
+ }

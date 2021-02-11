@@ -1,0 +1,184 @@
+/***************************************************
+ * 
+ * Schloss Dagstuhl Website: Globale Formatierung
+ * Version: $Rev: 101 $
+ * Stand: $Id: global.css 101 2006-07-27 16:37:48Z ct $
+ * 
+ * (c) 2003-2006 by mehrwert
+ * 
+ * mehrwert intermediale kommunikation
+ * Beutel & Ploch GbR
+ * Riehler Strasse 51
+ * 50668 Koeln
+ * 
+ * Tel: +49 221 139753-0
+ * Fax: +49 221 139753-13
+ * 
+ * typo3@mehrwert.de
+ * http://www.mehrwert.de
+ * 
+ **************************************************/
+ html {
+    height:100%;
+    margin:0;
+    padding:0;
+    }
+    body {
+    background-image:url("/fileadmin/assets/images/bg.png");
+    height:100%;
+    margin:0;
+    padding:0;
+    text-align:left;
+    }
+    body > div#ruler {
+    height:100%;
+    }
+    div#ruler {
+    float:left;
+    margin:0;
+    padding:0;
+    }
+    #frame {
+    background:url("/fileadmin/assets/images/bg_top.png") repeat-y scroll 0 0 transparent;
+    padding:0;
+    }
+    #wrapper {
+    margin:0 auto;
+    width:925px;
+    }
+    #main-frame {
+    margin:0 8px;
+    padding:0;
+    width:909px;
+    background-image: url(/fileadmin/assets/images/leibniz.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    }
+    #header {
+    background:none repeat scroll 0 0 #FFFFFF;
+    border-bottom:1px solid #D1D1D1;
+    float:left;
+    margin:0 8px;
+    padding:0;
+    width:909px;
+    }
+    #lcol {
+    float:left;
+    margin:0;
+    padding:0;
+    }
+    #lcol img.img-logo {
+    border:0 none;
+    color:#333333;
+    font-size:14px;
+    font-weight:bold;
+    }
+    #rcol {
+    float:right;
+    width: 392px;
+    height: 168px;
+    margin:0;
+    padding:0;
+    }
+    #nav {
+    float:left;
+    margin:0 8px;
+    padding:0 0 0 151px;
+    width:758px;
+    }
+    #nav-sub {
+    float:left;
+    padding:47px 0 110px 0;
+    width:151px;
+    }
+    .shortCuts {
+    display:none;
+    }
+    #nav-meta-frame {
+    background:none repeat scroll 0 0 #FFFFFF;
+    height:25px;
+    margin:0 8px;
+    padding:0;
+    text-align:right;
+    width:909px;
+    }
+    #nav-meta-frame div#nav-meta {
+    float:left;
+    left:536px;
+    position:absolute;
+    width:200px;
+    }
+    #nav-meta-frame div#nav-meta img.nav-meta-spacer {
+    margin:0 2px 2px;
+    vertical-align:middle;
+    }
+    .nav-footer-spacer {
+    margin:2px 0 0;
+    }
+    #nav-breadcrumb {
+    height:14px;
+    margin:0;
+    padding:4px 0 0;
+    width:90%;
+    }
+    div#nav-spacer {
+    clear:both;
+    margin:10px 0;
+    }
+    #nav-footer {
+    background:url("/fileadmin/assets/images/bg_bottom_2.png") no-repeat scroll 0 0 transparent;
+    clear:both;
+    height:68px;
+    padding:0 8px 13px;
+    margin-bottom: 25px;
+    vertical-align:middle;
+    }
+    #footer-logo {
+    float:left;
+    margin:11px 0 0 11px;
+    position: relative;
+    top: -38px;
+    }
+    #footer-message {
+    padding:15px 0 0 11px;
+    border-top: 1px solid #D1D1D1;
+    }
+    #topline {
+    height: 1px;
+    background:url("/fileadmin/assets/images/fadeline.gif") no-repeat;
+    }
+    #nav-search {
+    margin:0;
+    padding: 0 9px 0 0;
+    display: inline-block;
+    }
+    div.toplink {
+    text-align:right;
+    }
+    #content-frame {
+    background:none repeat scroll 0 0 #FFFFFF;
+    float:left;
+    padding:11px;
+    width:736px;
+    }
+    #content-wide {
+    float:left;
+    padding:0 18px 0 0;
+    width:463px;
+    }
+    #content-wider {
+    float:left;
+    padding:0 18px 0 0;
+    width:720px;
+    }
+    #content {
+    float:left;
+    padding:0;
+    width:463px;
+    }
+    #content-right {
+    float:right;
+    margin:0;
+    padding:10px 0 0 24px;
+    width:199px;
+    }
