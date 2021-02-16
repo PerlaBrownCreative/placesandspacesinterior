@@ -2,14 +2,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  font-family: Arial;
+  font-family: Arial,Helvetica,sans-serif;
   margin: 0;
+  font-size: .8em;
+  line-height:1.5em;
 }
 
 * {
   box-sizing: border-box;
 }
-
+h1, h2, h3, h4, h5, p, td, ul, ol, dl, blockquote, input, textarea, select {
+  color:#000000;
+  font-family:Arial,Helvetica,sans-serif;
+}
+h2 {
+  color:#666d71;
+  font-size:1.3em;
+  font-weight:bold;
+  line-height:1.3em;
+  margin:16px 0 20px 0;
+}
 img {
   vertical-align: middle;
 }
@@ -72,9 +84,8 @@ img {
 
 /* Container for image text */
 .caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+  background-color: #fff;
+  padding: 2px;
   color: white;
 }
 
@@ -92,12 +103,14 @@ img {
 
 /* Add a transparency effect for thumnbail images */
 .demo {
-  opacity: 0.6;
+  opacity: 0;
+  cursor:default;
 }
 
 .active,
 .demo:hover {
-  opacity: 1;
+  opacity: 0;
+  cursor:default;
 }
 </style>
 <body>
@@ -105,15 +118,16 @@ img {
 
 
 <div class="container">
-    <h2 style="text-align:center">Macroscopes Slideshow Gallery</h2>
+    <h2>Macroscopes Slideshow Gallery</h2>
   <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="./images/mapping_global_news.jpg" style="width:100%">
+    <!-- <div class="numbertext">1 / 2</div> -->
+    <a href="http://idemo.cns.iu.edu/macroscope-kiosk/#/11/3"> <img src="./images/mapping_global_news.jpg" style="width:100%"></a>
   </div>
 
+
   <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="./images/megaregions.jpg" style="width:100%">
+    <!-- <div class="numbertext">2 / 2</div> -->
+    <a href="http://idemo.cns.iu.edu/macroscope-kiosk/#/13/3"><img src="./images/megaregions.jpg" style="width:100%"></a>
   </div>
 
  
@@ -130,21 +144,34 @@ img {
 
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="./images/mapping_global_news.jpg" style="width:100%" onclick="currentSlide(1)" alt="This macroscope was created by Kalev H. Leetaru, an expert on
+      <img class="demo cursor" src="./images/mapping_global_news.jpg" style="width:100%" onclick="currentSlide(1)" href="http://idemo.cns.iu.edu/macroscope-kiosk/#/11/3" alt=" <i>Click the image above to view full Macroscope.</i> <br><br>This macroscope was created by Kalev H. Leetaru, an expert on
       big data and global society. It uses as its source material, quite literally,
       the news of the world. The visualization explores how new stories group
       countries into distinct clusters, creating an inherent geographic network
       structure over the planet akin to “communities” as seen through the eyes of the
       world’s presses. In essence, for every monitored news article published anywhere
       in the world, it compiles a list of the other countries also mentioned in those
-      articles.">
+      articles.
+      <br>
+      <br> References:
+      <br>Leetaru, Kalev. 2015. Mapping Global Society. Courtesy of The GDELT Project. In “11th Iteration (2016): Macroscopes for Interacting with Science,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Lisel Record. http://scimaps.org.
+      
+      <br>The GDELT Project. 2015. “Mapping Media Geographic Networks: The News Co-Occurrence Globe.” The GDELT Project Website. Last modified June 1, 2015. http://blog.gdeltproject.org/mapping-media-geographic-networks-the-news-co-occurrence-globe.
+      
+      <br>The GDELT Project. 2016. The GDELT Project Homepage. Accessed January 10, 2016. http://www.gdeltproject.org.">
     </div>
+
     <div class="column">
-      <img class="demo cursor" src="./images/megaregions.jpg" style="width:100%" onclick="currentSlide(2)" alt="Every day, millions of Americans weave together a new geography
+      <img class="demo cursor" src="./images/megaregions.jpg" style="width:100%" onclick="currentSlide(2)" alt="<i>Click the image above to view full Macroscope.</i> <br><br>Every day, millions of Americans weave together a new geography
       of commuter patterns. These interlinked megaregions, connected by economic ties,
       suggest that new kinds of geographic categories are necessary if we wish to
       accurately describe the functional network of flows and relationships which
-      shape our lives in the modern world.">
+      shape our lives in the modern world.
+      <br>
+      <br>References:
+      <br>Nelson, Garrett D. and Alasdair Rae. 2016. “An Economic Geography of the United States: From Commutes to Megaregions.” <i>PLoS ONE</i> 11(11): e0166083. https://doi.org/10.1371/journal.pone.0166083.
+      
+     <br> Nelson, Garrett Dash and Alasdair Rae. 2016. <i>Megaregions of the US.</i> Courtesy of Dartmouth College and the University of Sheffield. In “13th Iteration (2017): Macroscopes for Playing with Scale, <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Lisel Record. http://scimaps.org.">
     </div>
     
     
