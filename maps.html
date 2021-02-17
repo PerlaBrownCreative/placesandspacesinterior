@@ -92,11 +92,11 @@
 
   /* Number text (1/3 etc) */
   .numbertext {
-    color: #000;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+    color: #666d71;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin: 16px 0 20px 0;
   }
 
   /* Container for image text */
@@ -136,20 +136,19 @@
 
 
   <div class="container">
-    <h2>Maps Slideshow Gallery</h2>
     <div class="mySlides">
-      <div class="numbertext"></div>
+      <div class="numbertext">I.9 In Terms of Geography</div>
       <a href="http://scimaps.org/maps/map/in_terms_of_geograph_92/detail"><img src="./images/terms_of_geography.jpg"
           style="width:100%"></a>
     </div>
 
     <div class="mySlides">
-      <div class="numbertext"></div>
+      <div class="numbertext">X.9 Exploring the Relationships between a Map of Altruism and a Map of Science</div>
       <a href="http://scimaps.org/maps/map/exploring_the_relati_180/detail"><img src="./images/exploring_relationships_altruism_science.jpg" style="width:100%"></a>
     </div>
 
     <div class="mySlides">
-      <div class="numbertext"></div>
+      <div class="numbertext">III.8 Science-Related Wikipedian Activity</div>
       <a href="http://scimaps.org/maps/map/science_related_wiki_49/detail"><img src="./images/science_related_wiki.jpg" style="width:100%"></a>
     </div>
 
@@ -167,25 +166,25 @@
       <div class="column">
         <img class="demo cursor" src="./images/terms_of_geography.jpg" style="width:100%" onclick="currentSlide(1)"
           alt="<i>Click the image above to view Map.</i> <br><br>André Skupin’s research interests focus on geographic visualization, cartographic generalization, data mining, and information visualization. This map was computed from more than 22,000 abstracts submitted to the annual meetings of the Association of American Geographers during a ten-year period from 1993 to 2002. The methodology is centered around the representation of each document as an n-dimensional vector of terms. These vectors are used to construct a neural network model of the geographic knowledge domain using a Self-Organizing Map (SOM). The neural network model is then transformed into two types of information: (1) a landscape in which elevation indicates the degree to which a single, focused topic is addressed; and (2) multilevel text labels associated with regions in the visualization. The final rendering was executed in standard geographic information systems (GIS) software.<br>
-          <br> References:
-          <br>Skupin, André. 2004. “The World of Geography: Visualizing a Knowledge Domain with Cartographic Means.” <i>PNAS</i> 101 (Suppl. 1): 5274-5278.
+          <br> <b>References</b><ul>
+          <li>Skupin, André. 2004. “The World of Geography: Visualizing a Knowledge Domain with Cartographic Means.” <i>PNAS</i> 101 (Suppl. 1): 5274-5278.
 
-          <br>Skupin, André. 2005. <i>In Terms of Geography</i>. Courtesy of André Skupin, San Diego State University, San Diego, CA. In “1st Iteration (2005): The Power of Maps,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Deborah MacPherson. <a href='http://scimaps.org'>http://scimaps.org</a>.">
+          <br><li>Skupin, André. 2005. <i>In Terms of Geography</i>. Courtesy of André Skupin, San Diego State University, San Diego, CA. In “1st Iteration (2005): The Power of Maps,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Deborah MacPherson. <a href='http://scimaps.org'>http://scimaps.org</a>.</ul>">
       </div>
       <div class="column">
         <img class="demo cursor" src="./images/exploring_relationships_altruism_science.jpg" style="width:100%"
           onclick="currentSlide(2)"
           alt="<i>Click the image above to view Map.</i> <br><br>Richard Klavans and Kevin W. Boyack are known for groundbreaking maps of science that serve as platforms for planning and evaluation. This work, their eighth contribution to the exhibit, shows several relationships between the worlds of altruism and science using maps of the two spaces. The map of altruism was created using text from the websites of 125,000 non-profit organizations (NPOs) in the U.S. using domain names provided by GuideStar USA, Inc. MALLET topic modeling was run on nearly 4 million web pages, and the mission-related topics were located in a two-dimensional space. The map shows the locations of nearly 100,000 NPOs overlaid on this topic space. A map of science was created from 43 million Scopus documents using a two-step process: documents were grouped into 156,000 clusters using a direct citation methodology, and the clusters were mapped using textual similarity. Together, the results demonstrate that, while most NPO efforts support day-to-day activities related to altruistic missions, a surprising amount is used to fund scientific research, particularly in topics related to innovation, environment, and medicine. In contrast, very little NPO effort is used to support research in altruistic missions dealing with different aspects of childhood development. Funding of more research to increase our understanding of these areas could lead to revolutionary advances that parallel those made in technology and medicine in recent years.
-          <br><br> References:
-          <br>Klavans, Richard and Kevin W. Boyack. 2014. <i>Exploring the Relationships between a Map of Altruism and a Map of Science</i>. Courtesy of SciTech Strategies, Inc. In “10th Iteration (2014): The Future of Science Mapping,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Samuel Mills. <a href='http://scimaps.org'>http://scimaps.org</a>.">
+          <br><br> <b>References</b><ul>
+          <li>Klavans, Richard and Kevin W. Boyack. 2014. <i>Exploring the Relationships between a Map of Altruism and a Map of Science</i>. Courtesy of SciTech Strategies, Inc. In “10th Iteration (2014): The Future of Science Mapping,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Samuel Mills. <a href='http://scimaps.org'>http://scimaps.org</a>.</ul>">
       </div>
       <div class="column">
         <img class="demo cursor" src="images/science_related_wiki.jpg" style="width:100%" onclick="currentSlide(3)"
           alt="<i>Click the image above to view Map.</i> <br><br>Developed by research programmers Bruce W. Herr II and Todd M. Holloway, graphic designer Elisha F. Hardy, and information scientists Kevin W. Boyack and Katy Börner, this map shows the structure and dynamics of the English Wikipedia based on 659,388 articles and their editing activity. The similarity of each article-article pair was calculated as the number of shared links to other articles. The resulting similarity matrix was read into VxOrd to generate the base map layout. An invisible 37 x 37 half-inch grid was drawn underneath the network and filled with relevant images from key articles. Overlaid are 3,599 math, 6,474 science, and 3,164 technology articles. They are color-coded in blue, green, and yellow, respectively, with all other articles appearing in grey. Exactly 8,181 articles are in one category, 2,348 in two, and 73 in all three categories. The four corners show smaller versions of the map with articles size-coded according to article edit activity (top left), number of major edits from January 1st, 2007, to April 6th, 2007 (top right), number of bursts in edit activity (bottom right), and the number of times other articles link to an article (bottom left). These visualizations serve to highlight current trends and predict future editing activity and growth in Wikipedia articles related to science, technology, and mathematics.
-          <br><br> References:
-          <br>Holloway, Todd, Miran Božičević, and Katy Börner. 2007. “Analyzing and Visualizing the Semantic Converage of Wikipedia and Its Authors.” <i>Complexity</i> 12 (3): 30-40.
+          <br><br> <b>References</b><ul>
+          <li>Holloway, Todd, Miran Božičević, and Katy Börner. 2007. “Analyzing and Visualizing the Semantic Converage of Wikipedia and Its Authors.” <i>Complexity</i> 12 (3): 30-40.
 
-          <br>Herr II, Bruce W., Todd Holloway, Elisha F. Hardy, Kevin W. Boyack, and Katy Börner. 2007. <i>Science-Related Wikipedian Activity</i>. Courtesy of Indiana University. In “3rd Iteration (2007): The Power of Forecasts,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Julie M. Davis. <a href='http://scimaps.org'>http://scimaps.org</a>.">
+          <br><li>Herr II, Bruce W., Todd Holloway, Elisha F. Hardy, Kevin W. Boyack, and Katy Börner. 2007. <i>Science-Related Wikipedian Activity</i>. Courtesy of Indiana University. In “3rd Iteration (2007): The Power of Forecasts,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Julie M. Davis. <a href='http://scimaps.org'>http://scimaps.org</a>.</ul>">
 
       </div>
 
