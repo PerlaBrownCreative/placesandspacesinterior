@@ -47,7 +47,7 @@
     padding-top: 8px;
     margin: auto;
     position: relative;
-    width: 1000px;
+    width: 800px;
     height: 1040px;
   }
 
@@ -120,13 +120,14 @@
 
   /* Add a transparency effect for thumnbail images */
   .demo {
-    opacity: 0;
+    opacity: 100;
     cursor: default;
+    display: none;
   }
 
   .active,
   .demo:hover {
-    opacity: 0;
+    opacity: 80;
     cursor: default;
   }
 </style>
@@ -150,6 +151,18 @@
     <div class="mySlides">
       <div class="numbertext">III.8 Science-Related Wikipedian Activity</div>
       <a href="http://scimaps.org/maps/map/science_related_wiki_49/detail"><img src="./images/science_related_wiki.jpg" style="width:100%"></a>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">SciTech Model of the PubMed Literature</div>
+      <a href="https://figshare.com/articles/dataset/STS_Model_of_the_PubMed_Literature/12743639"><img src="./images/scitech_model.jpg"  style="width:100%"></a>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">GD 2019 Metropolis</div>
+      <a href="https://www1.pub.informatik.uni-wuerzburg.de/pub/wolff/posters/GD-2019-metropolis.pdf"><img src="./images/gd_metro_2019map.jpg" style="width:100%"></a>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">World Map of Recipes</div>
+      <a href="http://yun-vis.net/projects/bionet/gd2019c.pdf"><img src="./images/world_map_recipes.jpg" style="width:100%"></a>
     </div>
 
 
@@ -185,6 +198,38 @@
           <li>Holloway, Todd, Miran Božičević, and Katy Börner. 2007. “Analyzing and Visualizing the Semantic Converage of Wikipedia and Its Authors.” <i>Complexity</i> 12 (3): 30-40.
 
           <br><li>Herr II, Bruce W., Todd Holloway, Elisha F. Hardy, Kevin W. Boyack, and Katy Börner. 2007. <i>Science-Related Wikipedian Activity</i>. Courtesy of Indiana University. In “3rd Iteration (2007): The Power of Forecasts,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Julie M. Davis. <a href='http://scimaps.org'>http://scimaps.org</a>.</ul>">
+
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(4)"
+          alt="<i>Click the image above to view Map.</i> <br><br>Portfolio analysis is a fundamental practice of organizational leadership and is a necessary precursor of strategic planning. Successful application requires a highly detailed model of research options. We have constructed a model, the first of its kind, that accurately characterizes these options for the biomedical literature. The model comprises over 18 million PubMed documents from 1996–2019. Document relatedness was measured using a hybrid citation analysis + text similarity approach. The resulting 606.6 million document-to-document links were used to create 28,743 document clusters and an associated visual map. Clusters are characterized using metadata (e.g., phrases, MeSH) and over 20 indicators (e.g., funding, patent activity). The map and cluster-level data are embedded in Tableau to provide an interactive model enabling in-depth exploration of a research portfolio. Two example usage cases are provided, one to identify specific research opportunities related to coronavirus, and the second to identify research strengths of a large cohort of African American and Native American researchers at the University of Michigan Medical School.
+          <br><br> <b>Authors</b>: Kevin Boyack, Caleb Smith, Richard Klavans
+          <br><br><b>References</b><ul>
+          <li>Boyack, Kevin W., Caleb Smith, and Richard Klavans. 2020. <a href='https://www.nature.com/articles/s41597-020-00749-y'>“A Detailed Open Access Model of the PubMed Literature.”</a><i> Scientific Data</i> 7 (408).</li></ul>">
+
+      </div>
+      <div class="column">
+        <img class="demo cursor"  style="width:100%" onclick="currentSlide(5)"
+          alt="<i>Click the image above to view Map.</i> <br><br>The drawing is a visualization of the papers accepted to the conference GD 2019 as a metro map: the metro stations correspond to cities and the metro lines to papers. A line connects the cities where the authors of the corresponding paper are affiliated.
+
+          The visualization is noteworthy in that no two metro lines cross 	&quot;under a metro station&quot;. In our paper &quot;Using the Metro-Map Metaphor for Drawing Hypergraphs,	&quot;the drawing motivated that it makes sense to minimize the number of metro stations with such &quot;hidden&quot; crossings.
+          
+          <br><br> <b>Authors</b>: Alexander Wolff, Torsten Ueckerdt
+          <br><br><b>References</b><ul>
+          <li>Frank, Fabian, Michael Kaufmann, Stephen Kobourov, Tamara Mchedlidze, Sergey Pupyrev, Torsten Ueckerdt, and Alexander Wolff. 2021. “Using the Metro-Map Metaphor for Drawing Hypergraphs.” <i>In SOFSEM 2021: Theory and Practice of Computer Science</i>, edited by Tomáš Bureš, Riccardo Dondi, Johann Gamper, Giovanna Guerrini, Tomasz Jurdziński, Claus Pahl, Florian Sikora, and Prudence W.H. Wong, 361–372. Cham: Springer-Verlag.</li></ul>">
+
+      </div>
+
+      <div class="column">
+        <img class="demo cursor"  style="width:100%" onclick="currentSlide(6)"
+          alt="<i>Click the image above to view Map.</i> <br><br>This visualization was created for the Graph Drawing Contests 2019. The challenge was to visualize a data set <a href='http://mozart.diei.unipg.it/gdcontest/contest2019/topics.html'>(http://mozart.diei.unipg.it/gdcontest/contest2019/topics.html)</a> of 151 recipes using 297 ingredients from the TheMealDB database. The bipartite graph links recipes and ingredients if an ingredient is used in a recipe. Moreover, recipes are labeled by their country of origin, here one of 11 countries.
+
+          In the recipe map, we used a multi-level force-based algorithm to partition screen space among the countries and to balance the area for each labeled node. We avoided visual clutter by duplicating high-frequency ingredients with a single copy per country cluster and used an on-demand spanning-tree-based visual integration. The technique automatically grouped countries sharing common ingredients in their recipes close to each other, which happened to produce continental clusters in a data-driven way, while visually discriminating ingredient nodes with different levels of importance. It also allowed us to highlight ingredients and recipes of interest using an occlusion-free curve routing scheme.
+          
+          
+          <br><br> <b>Authors</b>: Martin Nöllenburg, Hsiang-Yun Wu, Ivan Viola, Soeren Nickel, Guangping Li
+          <br><br><b>References</b><ul>
+          <li>Wu, Hsiang-Yun, Martin Nöllenburg, and Ivan Viola. 2020. <a href='https://www.computer.org/csdl/journal/tg/5555/01/09262073/1oPzXkgPH0I'>“Multi-level Area Balancing of Clustered Graphs.”</a> <i>IEEE Transactions on Visualization and Computer Graphics.</i> doi:10.1109/tvcg.2020.3038154.</li></ul>">
 
       </div>
 
