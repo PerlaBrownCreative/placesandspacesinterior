@@ -44,12 +44,12 @@
 
   /* Position the image container (needed to position the left and right arrows) */
   .container {
-    padding-top: 8px;
-    margin: auto;
-    position: relative;
-    width: 800px;
-    height: 1040px;
-  }
+  padding-top: 8px;
+  margin:auto;  
+  position: relative;
+  width: 800px;
+  margin-bottom: 40px;
+}
 
   /* Hide the images by default */
   .mySlides {
@@ -66,7 +66,7 @@
   .next {
     cursor: pointer;
     position: absolute;
-    top: 45%;
+    top: 400px;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -75,13 +75,15 @@
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    -webkit-user-select: none;
+    -webkit-user-select: none; 
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   /* Position the "next button" to the right */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+   
   }
 
   /* On hover, add a black background color with a little bit see-through */
@@ -139,30 +141,30 @@
   <div class="container">
     <div class="mySlides">
       <div class="numbertext">I.9 In Terms of Geography</div>
-      <a href="http://scimaps.org/maps/map/in_terms_of_geograph_92/detail"><img src="./images/terms_of_geography.jpg"
+      <a href="http://scimaps.org/maps/map/in_terms_of_geograph_92/detail" target="_blank"><img src="./images/terms_of_geography.jpg"
           style="width:100%"></a>
     </div>
 
     <div class="mySlides">
       <div class="numbertext">X.9 Exploring the Relationships between a Map of Altruism and a Map of Science</div>
-      <a href="http://scimaps.org/maps/map/exploring_the_relati_180/detail"><img src="./images/exploring_relationships_altruism_science.jpg" style="width:100%"></a>
+      <a href="http://scimaps.org/maps/map/exploring_the_relati_180/detail" target="_blank"><img src="./images/exploring_relationships_altruism_science.jpg" style="width:100%"></a>
     </div>
 
     <div class="mySlides">
       <div class="numbertext">III.8 Science-Related Wikipedian Activity</div>
-      <a href="http://scimaps.org/maps/map/science_related_wiki_49/detail"><img src="./images/science_related_wiki.jpg" style="width:100%"></a>
+      <a href="http://scimaps.org/maps/map/science_related_wiki_49/detail" target="_blank"><img src="./images/science_related_wiki.jpg" style="width:100%"></a>
     </div>
     <div class="mySlides">
       <div class="numbertext">SciTech Model of the PubMed Literature</div>
-      <a href="https://figshare.com/articles/dataset/STS_Model_of_the_PubMed_Literature/12743639"><img src="./images/scitech_model.jpg"  style="width:100%"></a>
+      <a href="https://figshare.com/articles/dataset/STS_Model_of_the_PubMed_Literature/12743639" target="_blank"><img src="./images/scitech_model.jpg"  style="width:100%"></a>
     </div>
     <div class="mySlides">
       <div class="numbertext">GD 2019 Metropolis</div>
-      <a href="https://www1.pub.informatik.uni-wuerzburg.de/pub/wolff/posters/GD-2019-metropolis.pdf"><img src="./images/gd_metro_2019map.jpg" style="width:100%"></a>
+      <a href="https://www1.pub.informatik.uni-wuerzburg.de/pub/wolff/posters/GD-2019-metropolis.pdf" target="_blank"><img src="./images/gd_metro_2019map.jpg" style="width:100%"></a>
     </div>
     <div class="mySlides">
       <div class="numbertext">World Map of Recipes</div>
-      <a href="http://yun-vis.net/projects/bionet/gd2019c.pdf"><img src="./images/world_map_recipes.jpg" style="width:100%"></a>
+      <a href="http://yun-vis.net/projects/bionet/gd2019c.pdf" target="_blank"><img src="./images/world_map_recipes.jpg" style="width:100%"></a>
     </div>
 
 
@@ -179,6 +181,7 @@
       <div class="column">
         <img class="demo cursor" src="./images/terms_of_geography.jpg" style="width:100%" onclick="currentSlide(1)"
           alt="<i>Click the image above to view Map.</i> <br><br>André Skupin’s research interests focus on geographic visualization, cartographic generalization, data mining, and information visualization. This map was computed from more than 22,000 abstracts submitted to the annual meetings of the Association of American Geographers during a ten-year period from 1993 to 2002. The methodology is centered around the representation of each document as an n-dimensional vector of terms. These vectors are used to construct a neural network model of the geographic knowledge domain using a Self-Organizing Map (SOM). The neural network model is then transformed into two types of information: (1) a landscape in which elevation indicates the degree to which a single, focused topic is addressed; and (2) multilevel text labels associated with regions in the visualization. The final rendering was executed in standard geographic information systems (GIS) software.<br>
+          <br><br> <b>Authors</b>: André Skupin
           <br> <b>References</b><ul>
           <li>Skupin, André. 2004. “The World of Geography: Visualizing a Knowledge Domain with Cartographic Means.” <i>PNAS</i> 101 (Suppl. 1): 5274-5278.
 
@@ -188,13 +191,15 @@
         <img class="demo cursor" src="./images/exploring_relationships_altruism_science.jpg" style="width:100%"
           onclick="currentSlide(2)"
           alt="<i>Click the image above to view Map.</i> <br><br>Richard Klavans and Kevin W. Boyack are known for groundbreaking maps of science that serve as platforms for planning and evaluation. This work, their eighth contribution to the exhibit, shows several relationships between the worlds of altruism and science using maps of the two spaces. The map of altruism was created using text from the websites of 125,000 non-profit organizations (NPOs) in the U.S. using domain names provided by GuideStar USA, Inc. MALLET topic modeling was run on nearly 4 million web pages, and the mission-related topics were located in a two-dimensional space. The map shows the locations of nearly 100,000 NPOs overlaid on this topic space. A map of science was created from 43 million Scopus documents using a two-step process: documents were grouped into 156,000 clusters using a direct citation methodology, and the clusters were mapped using textual similarity. Together, the results demonstrate that, while most NPO efforts support day-to-day activities related to altruistic missions, a surprising amount is used to fund scientific research, particularly in topics related to innovation, environment, and medicine. In contrast, very little NPO effort is used to support research in altruistic missions dealing with different aspects of childhood development. Funding of more research to increase our understanding of these areas could lead to revolutionary advances that parallel those made in technology and medicine in recent years.
-          <br><br> <b>References</b><ul>
+          <br><br> <b>Authors</b>: Richard Klavans, Kevin W. Boyack
+          <br> <b>References</b><ul>
           <li>Klavans, Richard and Kevin W. Boyack. 2014. <i>Exploring the Relationships between a Map of Altruism and a Map of Science</i>. Courtesy of SciTech Strategies, Inc. In “10th Iteration (2014): The Future of Science Mapping,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Samuel Mills. <a href='http://scimaps.org'>http://scimaps.org</a>.</ul>">
       </div>
       <div class="column">
         <img class="demo cursor" src="images/science_related_wiki.jpg" style="width:100%" onclick="currentSlide(3)"
           alt="<i>Click the image above to view Map.</i> <br><br>Developed by research programmers Bruce W. Herr II and Todd M. Holloway, graphic designer Elisha F. Hardy, and information scientists Kevin W. Boyack and Katy Börner, this map shows the structure and dynamics of the English Wikipedia based on 659,388 articles and their editing activity. The similarity of each article-article pair was calculated as the number of shared links to other articles. The resulting similarity matrix was read into VxOrd to generate the base map layout. An invisible 37 x 37 half-inch grid was drawn underneath the network and filled with relevant images from key articles. Overlaid are 3,599 math, 6,474 science, and 3,164 technology articles. They are color-coded in blue, green, and yellow, respectively, with all other articles appearing in grey. Exactly 8,181 articles are in one category, 2,348 in two, and 73 in all three categories. The four corners show smaller versions of the map with articles size-coded according to article edit activity (top left), number of major edits from January 1st, 2007, to April 6th, 2007 (top right), number of bursts in edit activity (bottom right), and the number of times other articles link to an article (bottom left). These visualizations serve to highlight current trends and predict future editing activity and growth in Wikipedia articles related to science, technology, and mathematics.
-          <br><br> <b>References</b><ul>
+          <br><br> <b>Authors</b>: Alexander Wolff, Torsten Ueckerdt
+          <br> <b>References</b><ul>
           <li>Holloway, Todd, Miran Božičević, and Katy Börner. 2007. “Analyzing and Visualizing the Semantic Converage of Wikipedia and Its Authors.” <i>Complexity</i> 12 (3): 30-40.
 
           <br><li>Herr II, Bruce W., Todd Holloway, Elisha F. Hardy, Kevin W. Boyack, and Katy Börner. 2007. <i>Science-Related Wikipedian Activity</i>. Courtesy of Indiana University. In “3rd Iteration (2007): The Power of Forecasts,” <i>Places & Spaces: Mapping Science</i>, edited by Katy Börner and Julie M. Davis. <a href='http://scimaps.org'>http://scimaps.org</a>.</ul>">
@@ -203,8 +208,8 @@
       <div class="column">
         <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(4)"
           alt="<i>Click the image above to view Map.</i> <br><br>Portfolio analysis is a fundamental practice of organizational leadership and is a necessary precursor of strategic planning. Successful application requires a highly detailed model of research options. We have constructed a model, the first of its kind, that accurately characterizes these options for the biomedical literature. The model comprises over 18 million PubMed documents from 1996–2019. Document relatedness was measured using a hybrid citation analysis + text similarity approach. The resulting 606.6 million document-to-document links were used to create 28,743 document clusters and an associated visual map. Clusters are characterized using metadata (e.g., phrases, MeSH) and over 20 indicators (e.g., funding, patent activity). The map and cluster-level data are embedded in Tableau to provide an interactive model enabling in-depth exploration of a research portfolio. Two example usage cases are provided, one to identify specific research opportunities related to coronavirus, and the second to identify research strengths of a large cohort of African American and Native American researchers at the University of Michigan Medical School.
-          <br><br> <b>Authors</b>: Kevin Boyack, Caleb Smith, Richard Klavans
-          <br><br><b>References</b><ul>
+          <br><br> <b>Authors</b>: Bruce W. Herr II, Todd M. Holloway, Elisha F. Hardy, Kevin W. Boyack, Katy Börner
+          <br><b>References</b><ul>
           <li>Boyack, Kevin W., Caleb Smith, and Richard Klavans. 2020. <a href='https://www.nature.com/articles/s41597-020-00749-y'>“A Detailed Open Access Model of the PubMed Literature.”</a><i> Scientific Data</i> 7 (408).</li></ul>">
 
       </div>
@@ -215,7 +220,7 @@
           The visualization is noteworthy in that no two metro lines cross 	&quot;under a metro station&quot;. In our paper &quot;Using the Metro-Map Metaphor for Drawing Hypergraphs,	&quot;the drawing motivated that it makes sense to minimize the number of metro stations with such &quot;hidden&quot; crossings.
           
           <br><br> <b>Authors</b>: Alexander Wolff, Torsten Ueckerdt
-          <br><br><b>References</b><ul>
+          <br><b>References</b><ul>
           <li>Frank, Fabian, Michael Kaufmann, Stephen Kobourov, Tamara Mchedlidze, Sergey Pupyrev, Torsten Ueckerdt, and Alexander Wolff. 2021. “Using the Metro-Map Metaphor for Drawing Hypergraphs.” <i>In SOFSEM 2021: Theory and Practice of Computer Science</i>, edited by Tomáš Bureš, Riccardo Dondi, Johann Gamper, Giovanna Guerrini, Tomasz Jurdziński, Claus Pahl, Florian Sikora, and Prudence W.H. Wong, 361–372. Cham: Springer-Verlag.</li></ul>">
 
       </div>
@@ -228,7 +233,7 @@
           
           
           <br><br> <b>Authors</b>: Martin Nöllenburg, Hsiang-Yun Wu, Ivan Viola, Soeren Nickel, Guangping Li
-          <br><br><b>References</b><ul>
+          <br><b>References</b><ul>
           <li>Wu, Hsiang-Yun, Martin Nöllenburg, and Ivan Viola. 2020. <a href='https://www.computer.org/csdl/journal/tg/5555/01/09262073/1oPzXkgPH0I'>“Multi-level Area Balancing of Clustered Graphs.”</a> <i>IEEE Transactions on Visualization and Computer Graphics.</i> doi:10.1109/tvcg.2020.3038154.</li></ul>">
 
       </div>
